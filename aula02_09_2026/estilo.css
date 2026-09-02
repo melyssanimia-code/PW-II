@@ -1,0 +1,154 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #e494c5;
+    
+}
+
+/* HEADER / NAVIGATION */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #c065a9;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fac6ea;; /* Tom rosado/nude elegante */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c065a9;
+}
+
+/* SEÇÃO DE DESTAQUE / HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#c065a9;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fac6ea;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-secao {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fac6ea;
+}
+
+/* GRID DE PRODUTOS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px #c065a9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #c065a9;
+}
+
+.card p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card .btn-comprar {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #c065a9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.card .btn-comprar:hover {
+    background-color: #e898cd;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #e494c5;
+    color: #ffffff;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE (MEDIA QUERIES) */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
