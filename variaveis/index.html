@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Playlist</title>
+
+    <link rel="stylesheet" href="variaveis.css">
+    <script src="variaveis.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">♫</div>
+
+        <h1>Minha Playlist</h1>
+
+        <p>Adicione suas músicas favoritas</p>
+    </header>
+
+    <main>
+
+        <div class="card">
+
+            <h2>🎧 Nova música</h2>
+
+            <label>Nome da música</label>
+            <input
+                type="text"
+                id="musica"
+                placeholder="Digite o nome da música">
+
+            <label>Artista</label>
+            <input
+                type="text"
+                id="artista"
+                placeholder="Digite o nome do artista">
+
+            <label>Gênero musical</label>
+
+            <select id="genero">
+                <option value="">Selecione um gênero</option>
+                <option value="Pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Funk">Funk</option>
+                <option value="Rap">Rap</option>
+                <option value="K-pop">K-pop</option>
+                <option value="Sertanejo">Sertanejo</option>
+            </select>
+
+            <button onclick="cadastrar()">
+                Adicionar música ♫
+            </button>
+
+            <div id="resultado"></div>
+
+        </div>
+
+        <div class="lado">
+
+            <div class="disco">
+                ♫
+            </div>
+
+            <h2>Suas músicas</h2>
+
+            <p>
+                Crie sua própria playlist
+                adicionando suas músicas preferidas.
+            </p>
+
+            <div class="linha"></div>
+
+            <span>🎵 Música</span>
+            <span>🎤 Artista</span>
+            <span>🎶 Gênero</span>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
