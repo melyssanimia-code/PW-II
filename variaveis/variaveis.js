@@ -1,25 +1,21 @@
-function cadastrar() {
+const botao = document.getElementById("calcular");
 
-    let nomeMusica = document.getElementById("musica").value;
-    let nomeArtista = document.getElementById("artista").value;
-    let tipoGenero = document.getElementById("genero").value;
+botao.addEventListener("click", function () {
 
-    console.log("----- NOVA MÚSICA -----");
-    console.log("Nome da música:", nomeMusica);
-    console.log("Artista:", nomeArtista);
-    console.log("Gênero:", tipoGenero);
+    // STRING
+    const destino = document.getElementById("destino").value;
 
-    if (nomeMusica == "" || nomeArtista == "" || tipoGenero == "") {
+    // NUMBER
+    const dias = Number(document.getElementById("dias").value);
+    const gastoDiario = Number(document.getElementById("gasto").value);
 
-        console.log("Preencha todos os campos!");
+    // Fazendo algo com os dados
+    const gastoTotal = dias * gastoDiario;
 
-        document.getElementById("resultado").innerHTML =
-            "⚠️ Preencha todos os campos!";
-
-        return;
-    }
-
-    document.getElementById("resultado").innerHTML =
-        "✓ Música adicionada com sucesso!";
-
-}
+    // Mostrando os resultados no console
+    console.log("===== PLANEJAMENTO DA VIAGEM =====");
+    console.log("Destino:", destino);
+    console.log("Quantidade de dias:", dias);
+    console.log("Gasto diário: R$", gastoDiario);
+    console.log("Gasto total: R$", gastoTotal);
+});
