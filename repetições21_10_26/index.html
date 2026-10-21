@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMood - Filmes e Séries</title>
+    <link rel="stylesheet" href="repeticoes.css">
+    <script src="repeticao.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Cine<span>Mood</span> 🎬</h1>
+        <p>Meu cantinho de filmes e séries</p>
+        <p class="dupla">Melyssa Nimia e Priscila dos Santos Batista - 1DS</p>
+    </header>
+
+    <main>
+        <section class="apresentacao">
+            <h2>Vamos começar uma maratona?</h2>
+            <p>Escolha uma opção e veja o resultado!</p>
+        </section>
+
+        <section class="painel">
+            <label for="opcao">Escolha uma atividade:</label>
+
+            <select id="opcao">
+                <option value="1">Meus filmes favoritos</option>
+                <option value="2">Contagem de episódios</option>
+                <option value="3">Minha maratona</option>
+            </select>
+
+            <button id="executar" type="button">Ver resultado</button>
+
+            <div id="resultado" class="resultado" aria-live="polite">
+                <p>O resultado aparecerá aqui.</p>
+            </div>
+        </section>
+
+        <h2 class="titulo-cards">O que você encontra aqui?</h2>
+
+        <section class="cards">
+            <div class="card">
+                <h3>⭐ Favoritos</h3>
+                <p>Veja nossas séries preferidas.</p>
+            </div>
+
+            <div class="card">
+                <h3>📺 Episódios</h3>
+                <p>Confira a contagem dos episódios.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍿 Maratona</h3>
+                <p>Prepare a pipoca e divirta-se!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Melyssa Nimia e Priscila dos Santos Batista - 1DS</p>
+    </footer>
+
+</body>
+</html>
