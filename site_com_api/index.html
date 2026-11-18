@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <span class="etiqueta">ORGANIZAÇÃO DE ESTUDOS</span>
+            <h1>StudyFlow</h1>
+            <p>Organize suas matérias e acompanhe sua rotina de estudos.</p>
+
+            <form id="formBusca">
+                <input type="text" id="materia"
+                    placeholder="Digite uma matéria...">
+                <button type="submit">Buscar</button>
+            </form>
+        </header>
+
+        <section class="painel">
+
+            <div class="topo">
+                <div>
+                    <p>Seu painel de hoje</p>
+                    <h2 id="tituloMateria">Vamos começar?</h2>
+                    <span id="descricao">
+                        Escolha uma matéria para estudar.
+                    </span>
+                </div>
+
+                <div class="icone" id="iconeMateria">✦</div>
+            </div>
+
+            <div class="indicadores">
+                <div>
+                    <span>Tempo sugerido</span>
+                    <strong id="tempo">25 min</strong>
+                </div>
+
+                <div>
+                    <span>Nível</span>
+                    <strong id="nivel">Iniciante</strong>
+                </div>
+
+                <div>
+                    <span>Foco do dia</span>
+                    <strong id="foco">Aprender</strong>
+                </div>
+            </div>
+
+            <h3>Plano da semana</h3>
+
+            <div class="semana">
+                <div class="dia">SEG <b>📘</b> Leitura <small>25 min</small></div>
+                <div class="dia">TER <b>✏️</b> Exercícios <small>30 min</small></div>
+                <div class="dia">QUA <b>💻</b> Prática <small>40 min</small></div>
+                <div class="dia">QUI <b>🧠</b> Revisão <small>20 min</small></div>
+                <div class="dia">SEX <b>⭐</b> Desafio <small>30 min</small></div>
+            </div>
+
+            <div class="mensagem" id="mensagem">
+                <strong>Pequenos passos fazem diferença.</strong>
+                <span>Estude no seu ritmo!</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
